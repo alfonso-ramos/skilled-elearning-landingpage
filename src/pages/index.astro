@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro'
+
+import animationIcon from '../assets/icon-animation.svg'
+import businessIcon from '../assets/icon-business.svg'
+import cryptoIcon from '../assets/icon-crypto.svg'
+import designIcon from '../assets/icon-design.svg'
+import photographyIcon from '../assets/icon-photography.svg'
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Header />
+		<Hero />
+		<h2 class="rounded-md bg-deep-blue text-white w-[343px] h-[120px] mx-auto font-black text-left text-2xl bg-gradient-to-b from-gradient-orange to-gradient-pink">
+			Check out our most popular courses!
+		</h2>
+		
+		<Card 
+			icon={animationIcon}
+			alt="Animation course icon"
+			title="Animation"
+			text="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+		/>
+
+		<Card 
+			icon={designIcon}
+			alt="Design course icon"
+			title="Design"
+			text="Create beautiful, usable interfaces to help shape the future of how the web looks."
+		/>
+
+		<Card 
+			icon={photographyIcon}
+			alt="Photography course icon"
+			title="Photography"
+			text="Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos."
+		/>
+
+		<Card 
+			icon={cryptoIcon}
+			alt="Crypto course icon"
+			title="Crypto"
+			text="All you need to know to get started investing in crypto. Go from beginner to advanced with 54 hour course."
+		/>
+
+		<Card 
+			icon={businessIcon}
+			alt="Business course icon"
+			title="Business"
+			text="A step-by-step playbook to help you start, scale, and sustain your business without outside investment."
+		/>
+		<Footer />
+	</main>
+</Layout>
+
+

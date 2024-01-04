@@ -1,0 +1,13 @@
+---
+const { icon, alt = 'alt', title = 'Title', text = 'lorem' } = Astro.props
+---
+
+<div class="bg-white">
+    <div>
+
+        <img src={icon.src} alt={alt}>
+        <b>{title}</b>
+        <p>{text}</p>
+        <a href="/" class="text-pink">Get Started</a>
+    </div>
+</div>
