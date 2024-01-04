@@ -5,6 +5,7 @@ import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Card from '../components/Card.astro';
 import Footer from '../components/Footer.astro'
+import CardsContainer from '../components/CardsContainer.astro'
 
 import animationIcon from '../assets/icon-animation.svg'
 import businessIcon from '../assets/icon-business.svg'
@@ -17,10 +18,13 @@ import photographyIcon from '../assets/icon-photography.svg'
 	<main>
 		<Header />
 		<Hero />
-		<h2 class="rounded-md bg-deep-blue text-white w-[343px] h-[120px] mx-auto font-black text-left text-2xl bg-gradient-to-b from-gradient-orange to-gradient-pink">
-			Check out our most popular courses!
-		</h2>
 		
+		<CardsContainer>
+		<div class="rounded-md bg-deep-blue text-white w-[343px] h-[120px] mx-auto p-6 font-black text-left text-2xl bg-gradient-to-b from-gradient-orange to-gradient-pink">
+			<h2 >
+				Check out our most popular courses!
+			</h2>
+		</div>
 		<Card 
 			icon={animationIcon}
 			alt="Animation course icon"
@@ -55,6 +59,8 @@ import photographyIcon from '../assets/icon-photography.svg'
 			title="Business"
 			text="A step-by-step playbook to help you start, scale, and sustain your business without outside investment."
 		/>
+		</CardsContainer>
+
 		<Footer />
 	</main>
 </Layout>
