@@ -4,8 +4,9 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Card from '../components/Card.astro';
-import Footer from '../components/Footer.astro'
 import CardsContainer from '../components/CardsContainer.astro'
+import GetStartedButton from "../components/GetStartedButton.astro";
+
 
 import animationIcon from '../assets/icon-animation.svg'
 import businessIcon from '../assets/icon-business.svg'
@@ -15,7 +16,7 @@ import photographyIcon from '../assets/icon-photography.svg'
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
+	<main class="max-w-[1110px]">
 		<Header />
 
 		<Hero />
@@ -63,8 +64,14 @@ import photographyIcon from '../assets/icon-photography.svg'
 		/>
 		</CardsContainer>
 
-		<Footer />
 	</main>
+
+	<footer class="w-full bg-deep-blue flex flex-row justify-between px-4 py-9 content-center mt-20">
+		<a href="/">
+			<img src="../src/assets/logo-light.svg" alt="">
+		</a>
+		<GetStartedButton style="text-white bg-gradient-to-b from-gradient-blue to-gradient-pink text-bold py-3"/>
+	</footer>
 </Layout>
 
 

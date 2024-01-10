@@ -8,19 +8,22 @@ import tabletImg from '../assets/image-hero-desktop.webp'
 import desktopImg from '../assets/image-hero-tablet.webp'
 ---
 
-<div class="mx-4">
-    <h1 class="text-[40px] font-bold text-deep-blue">Maximize skill, minimize budget</h1>
+<div class="mx-4 md:flex">
+    <div>
+        <h1 class="text-[40px] font-bold text-deep-blue">Maximize skill, minimize budget</h1>
+    
+        <p class="text-gray">
+            Our modern courses across a range of in-demand skills will give you the
+            knowledge you need to live the life you want.
+        </p>
+        <GetStartedButton style="text-white bg-gradient-to-b from-gradient-orange to-gradient-pink text-bold py-3"/>
+    </div>
 
-    <p class="text-gray">
-        Our modern courses across a range of in-demand skills will give you the
-        knowledge you need to live the life you want.
-    </p>
-    <GetStartedButton style="text-white bg-gradient-to-b from-gradient-orange to-gradient-pink text-bold py-3"/>
-
-
-    <HeroCustomImg 
-        mobileImgUrl={mobileImg}
-        tabletImgUrl={tabletImg}
-        desktopImgUrl={desktopImg}
-    />
+    <div class="md:relative md:-mr-60 md:-mt-40">
+        <HeroCustomImg
+            mobileImgUrl={mobileImg}
+            tabletImgUrl={tabletImg}
+            desktopImgUrl={desktopImg}
+        />
+    </div>
 </div>
