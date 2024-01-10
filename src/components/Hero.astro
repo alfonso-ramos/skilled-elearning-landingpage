@@ -1,6 +1,11 @@
 ---
 import GetStartedButton from "./GetStartedButton.astro"
 GetStartedButton
+import HeroCustomImg from "./HeroCustomImg.astro"
+
+import mobileImg from '../assets/image-hero-mobile.webp'
+import tabletImg from '../assets/image-hero-desktop.webp'
+import desktopImg from '../assets/image-hero-tablet.webp'
 ---
 
 <div class="mx-4">
@@ -13,5 +18,9 @@ GetStartedButton
     <GetStartedButton style="text-white bg-gradient-to-b from-gradient-orange to-gradient-pink text-bold py-3"/>
 
 
-    <img src="../src/assets/image-hero-mobile.webp" alt="">
+    <HeroCustomImg 
+        mobileImgUrl={mobileImg}
+        tabletImgUrl={tabletImg}
+        desktopImgUrl={desktopImg}
+    />
 </div>
