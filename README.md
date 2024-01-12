@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/alfonso-ramos/skilled-elearning-landingpage/blob/main/screenshot.png?raw=true)
 
 
 
