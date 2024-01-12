@@ -2,12 +2,12 @@
 const { icon, alt = 'alt', title = 'Title', text = 'lorem' } = Astro.props
 ---
 
-<div class="bg-white pt-14 pb-8">
+<div class="bg-white pt-14 pb-8 px-7">
     <div>
 
         <img src={icon.src} alt={alt} class="-mt-20 mb-5">
-        <b>{title}</b>
-        <p>{text}</p>
-        <a href="/" class="text-pink">Get Started</a>
+        <p class="font-black text-xl lg:text-2xl">{title}</p>
+        <p class="text-gray text-base mt-4 mb-6 lg:text-lg">{text}</p>
+        <a href="/" class="text-pink font-bold lg:text-lg lg:mt-6">Get Started</a>
     </div>
 </div>

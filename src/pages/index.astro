@@ -7,7 +7,7 @@ import Card from '../components/Card.astro';
 import CardsContainer from '../components/CardsContainer.astro'
 import GetStartedButton from "../components/GetStartedButton.astro";
 
-
+import lightLogo from '../assets/logo-light.svg'
 import animationIcon from '../assets/icon-animation.svg'
 import businessIcon from '../assets/icon-business.svg'
 import cryptoIcon from '../assets/icon-crypto.svg'
@@ -15,16 +15,16 @@ import designIcon from '../assets/icon-design.svg'
 import photographyIcon from '../assets/icon-photography.svg'
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="max-w-[1110px]">
-		<Header />
+<Layout title="E-learning skills">
+	<main class="max-w-[1110px] mx-auto">
+		<Header/>
 
 		<Hero />
 
 		
 		<CardsContainer>
 		<div class="rounded-md bg-deep-blue text-white h-[120px] mx-auto w-full p-6 font-black text-left text-2xl bg-gradient-to-b from-gradient-orange to-gradient-pink md:min-h-[259px]">
-			<h2 >
+			<h2 class="text-2xl font-black md:mt-6 lg:text-3xl lg:mx-6">
 				Check out our most popular courses!
 			</h2>
 		</div>
@@ -66,11 +66,11 @@ import photographyIcon from '../assets/icon-photography.svg'
 
 	</main>
 
-	<footer class="w-full bg-deep-blue flex flex-row justify-between px-4 py-9 content-center mt-20">
-		<a href="/">
-			<img src="../src/assets/logo-light.svg" alt="">
+	<footer class="w-full bg-deep-blue flex flex-row justify-between content-center px-4 py-9 mt-20">
+		<a class="pt-2" href="/">
+			<img src={lightLogo.src} alt="">
 		</a>
-		<GetStartedButton style="text-white bg-gradient-to-b from-gradient-blue to-gradient-pink text-bold py-3"/>
+		<GetStartedButton style="bg-gradient-to-b from-gradient-blue to-gradient-pink py-3"/>
 	</footer>
 </Layout>
 
